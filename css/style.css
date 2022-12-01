@@ -86,7 +86,7 @@ header nav {
     align-items: center;
     gap: 100px;
 }
-header nav .web{
+.web{
     font-family: var(--font-secundario), sans-serif;
     color: #2196f3; 
     font-weight: 700;
@@ -243,23 +243,85 @@ header .Headoard .header-contact li .contact {
     width: 360px;
 }
 /*-- tercera seccion --*/
-.section-workgroup {
-    background-color: var(--backgroun-gray);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section-workgroup .container .workgroup {
+.chargues-container {
+    max-width: calc(1600px - 430px);
+    width: 100%;
+  }
+.charges-background {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: center;
+    background-color: #f5f4fa;
+    padding: 94px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+.charges-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #212121;
+    padding-bottom: 30px;
+  }
+.charges-items {
+    display: flex;
+    gap: 30px;
     list-style: none;
-    width: 1170px;
-    margin: 50px auto 0px;
+  }
+.charge-tarje {
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    animation: tarjeta1Out 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.charge-name {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #212121;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+.charge-description {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 16px;
+  }
+.icon-redes {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+  }
+.redes-sociales {
     display: flex;
-    justify-content: space-between;
-}
-.section-workgroup .container .workgroup>li {
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;    
+    list-style: none;
+  }
+.icon-social {
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+.icon-social:hover {
+    background-color: #2196f3;
+  }
+.icon-social:hover .icon-redes {
+    fill: #ffffff;
+  }
+/*
+.charges-background .charges-container .workgroup>li {
     height: 368px;
     display: flex;
     flex-direction: column;
@@ -268,18 +330,18 @@ header .Headoard .header-contact li .contact {
     border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
-.section-workgroup .container .workgroup li ul {
+.charges-background .charges-container .workgroup li ul {
     display: flex;
     width: 206px;
     height: 44px;
 }
-.section-workgroup .container .workgroup li ul li svg {
+.charges-background .charges-container .workgroup li ul li svg {
     width: 44px;
 }
-.section-workgroup .container .workgroup li ul li svg path {
+.charges-background .container .workgroup li ul li svg path {
     fill: var(--color-gray);
 }
-.section-workgroup .container .name{
+.charges-background .charges-container .name{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -290,7 +352,7 @@ header .Headoard .header-contact li .contact {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.section-workgroup .container .card {
+.charges-background .charges-container .card {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -298,7 +360,36 @@ header .Headoard .header-contact li .contact {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-gray);
-}
+} --*/
+/* ----------- Clientes Regulares----------- */
+.customer-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    color: var(--color-black);
+    margin-bottom: 44px;
+  }
+  .customer-list {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 150px;
+  }
+  .icon-customer {
+    width: 170px;
+    height: 81px;
+    border: 1px solid #afb1b8;
+    border-radius: 15px;
+    fill: #afb1b8;
+  }
+  .icon-customer:hover {
+    border-color: #2196f3;
+    fill: #2196f3;
+  }
 /*--------portafolio--------*/
 .botones .option {
     display: flex;
@@ -390,15 +481,11 @@ header .Headoard .header-contact li .contact {
     margin-left: 24px;  
 }
 /*--Footer--*/
-
 footer {
     background-color: #2f303a;
     padding: 94px calc((100% - 1200px) / 2);
 } 
-address ul {
-    list-style: none;
-}
-.location {
+.footer-location {
     display: grid;
     font-family: 'Roboto';
     font-style: normal;
@@ -408,7 +495,7 @@ address ul {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-address .email, .tel{
+address .footer-email, .footer-phone{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -418,13 +505,35 @@ address .email, .tel{
     display: block;
     color: #ffffff99;
 }
-address .location:hover, .email:hover, .tel:hover, 
-address .location:focus, .email:focus, .tel:focus, {
+.location:hover, .footer-email:hover, .footer-phone:hover, 
+.location:focus, .footer-email:focus, .footer-phone:focus, {
   color: var(--color-white);
 }
-
-
-
+.footer2 {
+    margin-top: 62px;
+  }
+.footer2-logo {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  .redes-sociales2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 110px;
+  }
+/**  .icon-redes2 {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+--*/
 
 
 
