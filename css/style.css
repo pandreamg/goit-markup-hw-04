@@ -196,6 +196,10 @@ header .Headoard .header-contact li .contact {
     list-style: none;
     width: 240px;
 }
+.icons-features {
+    width: 70px;
+    height: 70px;
+}
 .features-item li div {
     width: 270px;
     height: 120px;
