@@ -176,7 +176,7 @@ header .Headoard .header-contact li .contact {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ), 
-        url(/images/svg/Imagen-title.svg);
+        url(/images/Imagen-fondo.jpg);
 }
 .fondo .titulo-principal {
     width: 500px;
@@ -445,6 +445,7 @@ header .Headoard .header-contact li .contact {
 footer {
     background-color: #2f303a;
     padding: 94px calc((100% - 1200px) / 2);
+    
 } 
 .footer-container {
     display: flex;
@@ -479,31 +480,26 @@ address .footer-email, .footer-phone{
 .footer2 {
     margin-top: 62px;
   }
-  .footer2-logo {
+.footer2-logo {
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-left: 120px;
-    margin-bottom: 10px;
+    color: var(--color-white);
+    margin-bottom: 20px;
   }
-  .redes-sociales2 {
+.redes-sociales2 {
     display: flex;
-    justify-content: center;
-    padding-left: 110px;
-     list-style: none;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
   }
-  .icon-redes2 {
+.icon-redes2 {
     width: 20px;
     height: 20px;
     fill: #ffffff;
   }
-  .icons-footer {
+.icons-footer {
     margin-left: 20px;
   }
-  .icons-footer:hover path {
+.icons-footer:hover path {
     fill: #2196f3;
   }
