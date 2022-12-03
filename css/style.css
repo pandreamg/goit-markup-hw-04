@@ -168,11 +168,16 @@ header .Headoard .header-contact li .contact {
 }
 /*-----titulo principal-----*/
 .fondo {
-    background: url(../images/Imagenfondo.jpg);
-    background-blend-mode: overlay;
-    padding: 200px calc((100% - 1200px) / 2);
-    position: relative;
-    text-align: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+       0deg,
+       rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)
+     ),
+     url(../images/Imagenfondo.jpg);
 }
 .fondo .titulo-principal {
     width: 500px;
